@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Speedometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkr-wX-cGI">
+                                <rect key="frame" x="16" y="531.5" width="116.5" height="119.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SpeedLabelBlue">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZM-ce-Hlw">
+                                <rect key="frame" x="22" y="635" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3M-Pv-tvu" customClass="UIBorderedButton" customModule="Speedometer" customModuleProvider="target">
+                                <rect key="frame" x="274" y="616" width="85" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="CLP-aT-HhV"/>
+                                    <constraint firstAttribute="height" constant="35" id="vXn-Rz-QjZ"/>
+                                </constraints>
+                                <state key="normal" title="Max Speed">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapMaxSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ulI-Q7-1Be"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uph-6h-Ni4">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-8Q-vwA">
+                                        <rect key="frame" x="16" y="-60.5" width="116.5" height="119.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="SpeedLabelWhite">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elC-ux-8zh" customClass="UIBorderedButton" customModule="Speedometer" customModuleProvider="target">
+                                        <rect key="frame" x="274" y="24" width="85" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="Tdr-8U-dy9"/>
+                                            <constraint firstAttribute="height" constant="35" id="UX4-ak-Cgb"/>
+                                        </constraints>
+                                        <state key="normal" title="Max Speed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapMaxSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YV6-te-gvH"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f44-Q4-Z8u">
+                                        <rect key="frame" x="22" y="43" width="49" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SpeedView"/>
+                                <constraints>
+                                    <constraint firstItem="f44-Q4-Z8u" firstAttribute="leading" secondItem="uph-6h-Ni4" secondAttribute="leading" constant="22" id="2gC-ep-yoW"/>
+                                    <constraint firstAttribute="bottom" secondItem="ufd-8Q-vwA" secondAttribute="bottom" constant="16" id="DMW-nb-tei"/>
+                                    <constraint firstAttribute="bottom" secondItem="f44-Q4-Z8u" secondAttribute="bottom" constant="8" id="N0h-dO-fbn"/>
+                                    <constraint firstAttribute="height" constant="75" id="g2u-dO-eXd"/>
+                                    <constraint firstAttribute="bottom" secondItem="elC-ux-8zh" secondAttribute="bottom" constant="16" id="m4F-1e-Svo"/>
+                                    <constraint firstItem="ufd-8Q-vwA" firstAttribute="leading" secondItem="uph-6h-Ni4" secondAttribute="leading" constant="16" id="nP9-aR-m4I"/>
+                                    <constraint firstAttribute="trailing" secondItem="elC-ux-8zh" secondAttribute="trailing" constant="16" id="naD-dd-Hbs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="RootView"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d3M-Pv-tvu" secondAttribute="bottom" constant="16" id="RPo-Gw-cdX"/>
+                            <constraint firstAttribute="trailing" secondItem="uph-6h-Ni4" secondAttribute="trailing" id="TWz-ed-uBi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1ZM-ce-Hlw" secondAttribute="bottom" constant="8" id="TcF-vN-pej"/>
+                            <constraint firstAttribute="trailing" secondItem="d3M-Pv-tvu" secondAttribute="trailing" constant="16" id="XVQ-uj-sZ5"/>
+                            <constraint firstItem="dkr-wX-cGI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="XaL-wF-nUa"/>
+                            <constraint firstItem="uph-6h-Ni4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eLJ-xn-u8V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uph-6h-Ni4" secondAttribute="bottom" id="jai-7w-iMf"/>
+                            <constraint firstItem="1ZM-ce-Hlw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="tGe-em-c31"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dkr-wX-cGI" secondAttribute="bottom" constant="16" id="zuK-wS-NBj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="speedViewHeightConstraint" destination="g2u-dO-eXd" id="3Vc-uz-U0W"/>
+                        <outletCollection property="speedLabels" destination="ufd-8Q-vwA" collectionClass="NSMutableArray" id="tVW-cB-DVd"/>
+                        <outletCollection property="colorableViews" destination="1ZM-ce-Hlw" collectionClass="NSMutableArray" id="Dff-Mg-Coj"/>
+                        <outletCollection property="colorableViews" destination="dkr-wX-cGI" collectionClass="NSMutableArray" id="OY9-QM-1n2"/>
+                        <outletCollection property="colorableViews" destination="d3M-Pv-tvu" collectionClass="NSMutableArray" id="BI0-JP-Qun"/>
+                        <outletCollection property="colorableViews" destination="uph-6h-Ni4" collectionClass="NSMutableArray" id="xIq-5c-NHb"/>
+                        <outletCollection property="speedLabels" destination="dkr-wX-cGI" collectionClass="NSMutableArray" id="m2C-hw-4KG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="22"/>
+        </scene>
+    </scenes>
+</document>

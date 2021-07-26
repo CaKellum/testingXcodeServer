@@ -1,0 +1,28 @@
+{
+  "commitish" : "2.0.0",
+  "iOS" : [
+    {
+      "hash" : "a9c75cb00308e7d662bc1cc27b91a972ede9dd896fe0faa9c26d7279392d0188",
+      "name" : "Swinject"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.2.1\nBuild version 8C1002",
+  "watchOS" : [
+    {
+      "hash" : "dd4982f03c52dcc7cb65083b9d6114f01a0fae087b9ff5a86520ba1bcc71652b",
+      "name" : "Swinject"
+    }
+  ],
+  "tvOS" : [
+    {
+      "hash" : "b7faa501998ca3f2c09d4b4814859fc259f1084d6dc0fff1fe095cf1cc4a7483",
+      "name" : "Swinject"
+    }
+  ],
+  "Mac" : [
+    {
+      "hash" : "4b370214d9224c4d63fe24cc1eb8bfa378b0a68878eff306f373c8a438ae16a6",
+      "name" : "Swinject"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "commitish" : "1.0.0",
+  "iOS" : [
+    {
+      "hash" : "36ba263651fdae91ee5a2ca91a328cbf3ea2ae8a41c1471de5c494925d9d3579",
+      "name" : "SwinjectStoryboard"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.2.1\nBuild version 8C1002",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "hash" : "123989da1e895d8d77105195f6ec3ed069238f5c350982db81a8a44f1af69e8b",
+      "name" : "SwinjectStoryboard"
+    }
+  ],
+  "Mac" : [
+    {
+      "hash" : "c3fc4a11401db9e47a1a51e981e1730a8a6a51e1f4f58358c089338d30a61b22",
+      "name" : "SwinjectStoryboard"
+    }
+  ]
+}
